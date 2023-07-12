@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix-clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@800;900&family=Roboto+Condensed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link rel="icon" href="./images/favicon-32x32.png">
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <section id="main" class="min-vh-100 position-relative">
+        <nav class="navbar navbar-expand">
+          <div class="container-fluid justify-content-start ms-5">
+            <a class="navbar-brand text-danger fs-1 fw-bold" href="index.html">NETFLIX</a>
+          </div>
+        </nav>
+        <!------------------ sign-in - section ------------------------->
+        <div class="container text-center" id="signin">
+            <div class="container w-75">
+                <h2 class="text-light text-start fw-bold">Sign In</h2>
+                <form action="#" class="position-relative w-100">
+                    <input type="text" class="form-control mb-3 p-2 bg-dark rounded-0" placeholder="Email or phone number" />
+                    <input type="password" class="form-control mb-3 p-2 bg-dark rounded-0" placeholder="Password" />
+                    <button type="button" class="btn bg-danger mb-1 w-100 p-2 text-light">
+                        Sign In
+                    </button>
+                    <div class="d-flex justify-content-between mb-5">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="check-input" />
+                            <label for="check-input" class="form-check-label text-secondary"> Remember me </label>
+                        </div>
+                        <a href="#" class="text-secondary link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover">Need help?</a>
+                    </div>
+
+                    <div class="sign-content text-secondary text-start">
+                        <p>New to Netflix? &nbsp;
+                            <a href="signin.html" class="text-secondary d-inline-block link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover">
+                                Sign up now.
+                            </a>
+                        </p>
+                        <p>
+                            This page is protected by Google reCAPTCHA to ensure you're not a bot. 
+                            <a href="#" class="d-inline-block">Learn more.</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------- footer ------------------------>
+    <footer class="sections" style="height: 350px;">
+        <div class="container text-secondary">
+          <div class="row mb-4 fw-medium">Questions? Call 000-800-919-xxxx</div>
+          <div class="row mb-4">
+            <div class="col-3 p-0 d-flex flex-column">
+              <a href="#" class="p-1 text-secondary fw-medium link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover">FAQ</a>
+              <a href="#" class="p-1 text-secondary fw-medium link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover">Cookie Preferences</a>
+            </div>
+            <div class="col-3 d-flex flex-column">
+              <a href="#" class="p-1 text-secondary fw-medium link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover">Help Center</a>
+              <a href="#" class="p-1 text-secondary fw-medium link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover">Corporate Information</a>
+            </div>
+            <div class="col-3 d-flex flex-column">
+                <a href="#" class="p-1 text-secondary fw-medium link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover">Terms of Use</a>
+              </div>
+            <div class="col-3 d-flex flex-column">
+              <a href="#" class="p-1 text-secondary fw-medium link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover">Privacy</a>
+            </div>
+          </div>
+  
+          <div class="row dropdown my-3" style="width: 140px">
+            <button
+              class="btn dropdown-toggle btn-outline-secondary fw-light lang text-light"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="bi bi-globe me-1"></i>English
+            </button>
+            <ul class="dropdown-menu bg-dark">
+              <li><a href="#" class="dropdown-item text-light">Hindi</a></li>
+              <li><a href="#" class="dropdown-item text-light">French</a></li>
+              <li><a href="#" class="dropdown-item text-light">Korean</a></li>
+              <li><a href="#" class="dropdown-item text-light">German</a></li>
+            </ul>
+          </div>
+        </div>
+    </footer>
+</body>
+</html>
